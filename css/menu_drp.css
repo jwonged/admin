@@ -1,0 +1,34 @@
+/* CSS Document */
+<!--<style type="text/css" media="screen">-->
+#horizontalmenu ul 
+{ 
+	padding:1; margin:1; list-style:none; 
+} 
+
+#horizontalmenu li 
+{ 
+	float:left; 
+	position:relative; 
+	padding-right:100; 
+	display:block; 
+	border:4px solid #CC55FF; 
+	border-style:inset; 
+}
+ 
+#horizontalmenu li ul 
+{ 
+	display:none; position:absolute; 
+} 
+
+#horizontalmenu li:hover ul
+{ 
+	display:block; background:red; height:auto; width:8em; 
+} 
+
+#horizontalmenu li ul li
+{ 
+	clear:both; border-style:none;
+} 
+<!--</style>-->
+
+

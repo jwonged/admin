@@ -1,0 +1,155 @@
+table{	border-collapse:collapse;}/*table,th, td{	border: 1px solid black;}*/
+td.td1{
+/*font:11px arial;Changed By ALP*/
+ font:12px arial; 
+font-weight: bold;
+color:#fff;
+text-decoration: none;
+border-right: 1px solid;
+}
+td.td2
+{
+font:12px arial;/*Changed By ALP*/
+color:#000;
+text-decoration: none;
+border-bottom : 1px solid black;
+border-left : 1px solid black;
+}
+td.td12
+{
+font:12px arial; 
+font-weight: bold;
+color:#fff;
+text-decoration: none;
+border-right : 1px solid black;
+}
+
+td.td22
+{
+border-right : 1px solid black;
+}
+td.tdTopB{
+border-top:1px solid;
+}
+.menuH{    margin: 0; width: 100%; float:none;    behavior: url("/horizontal/menuh/cssmenu.htc");    height: 36px;    background: black url(bg.gif) repeat-x 0 0;    /*border: 1px solid #BBB;*/    position:relative;/*! for IE htc*/    z-index:4;/*H2*/	font-size: 14px; /*Added By ALP*/	/*font-family:Arial, Helvetica, sans-serif;*/	font-family: 'Helvetica Neue','Helvetica','Arial','sans-serif';    list-style: none;    padding: 0;
+}.menuH li{    padding: 0;    float: left;    height: 36px;    position: relative;
+}
+.menuH li:hover, .menuH li.onhover{    background: #E74C3C url(bg.gif) repeat-x 0 -48px;}ul.menuH a{	padding: 0 30px;    line-height: 36px; /*Note: keep this value the same as the height of .menuH and .menuH li */    font-size: 14px; /*Added By ALP*/	font-family:Arial, Helvetica, sans-serif; /*Added by ALP*/    font-weight: bold;    color: white;    display: block;    outline: 0;    text-decoration: none;
+}.menuH a:hover{    color: #ffffff;}.menuH a.arrow{    background: url(arrow.gif) no-repeat right center;}
+.menuH ul a.arrow{    background: url(right.gif) no-repeat 97% center;}*Used to align a top-level item to the right*/        
+.menuH .menuRight{    float: right;    margin-right: 0px;}
+        
+/*for the top-level separators*/
+.menuH li.separator
+{
+    font-size:0;
+    overflow:hidden;
+    border-left:1px solid #F7F7F7;
+    border-right:1px solid #BBBBBB;
+}
+               
+        
+/*######sub level###########*/
+        
+ul.menuH ul
+{
+    width: 235px;
+    position: absolute;
+    left: -9999px;
+    border: 1px solid #DDD;
+    border-top: 0; 
+    background: #E74C3C;    
+    text-align: left;
+    list-style: none; margin: 0;  
+    /*Following 1px(padding-right) will determine how much it is overlapped by the sub-sub-menu */
+    padding: 0 1px 10px 0;   
+}
+
+.menuH li li
+{
+    float: none;
+    white-space:nowrap;
+    height: 26px;
+}
+.menuH li li:hover, .menuH li li.onhover
+{
+    background:#fff;
+}
+.menuH ul a
+{
+    padding: 0 20px;
+    line-height: 26px;
+    /*font-size: 0.9em;*/
+	 font-size: 14px;/*Commented and Added by ALP*/
+	font-family:Arial, Helvetica, sans-serif; /*Added by ALP*/ 
+    font-weight: normal;
+    color: #ffffff;/*blue*/	/*color: #ffffff;/*blue*/
+    text-align: left;
+}
+
+.menuH ul a:hover
+{
+    color: black;
+}
+
+.menuH li:hover ul, .menuH li.onhover ul
+{
+    left: -1px;/*Use this property to change offset of the dropdown*/
+    top: auto;
+}
+
+.menuH li:hover .dropToLeft, .menuH li.onhover .dropToLeft
+{
+    left: auto;
+    right: -1px;
+    top: auto;
+}
+.menuH ul ul
+{
+    border-top: 1px solid #DDD;
+}
+
+.menuH li:hover ul ul, .menuH li:hover ul ul ul, .menuH li:hover ul ul ul ul,
+.menuH li.onhover ul ul, .menuH li.onhover ul ul ul, .menuH li.onhover ul ul ul ul
+{
+    left: -9999px;
+    top:0;
+}
+
+.menuH li li:hover ul, .menuH li li li:hover ul, .menuH li li li li:hover ul,
+.menuH li li.onhover ul, .menuH li li li.onhover ul, .menuH li li li li.onhover ul
+{
+    left: 200px;
+}
+        
+/*####### special effects ##########*/
+        
+.decor1 
+{
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari and Chrome */
+    border-radius: 3px; /* Opera 10.5+, future browsers, and now also our behavior htc file */
+
+    -moz-box-shadow: 0px 1px 4px #eee; /* Firefox */
+    /*-webkit-box-shadow: 0px 1px 4px #eee;*/ /* Safari and Chrome */
+    /*box-shadow: 0px 1px 4px #eee;*/ /* Opera 10.5+, future browsers and IE6+ using our behavior htc file */
+            
+}
+.menuH ul 
+{
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+
+    -moz-box-shadow: 0px 6px 6px #CCC;
+    -webkit-box-shadow: 0px 6px 6px #CCC;
+    box-shadow: 0px 6px 6px #CCC;  
+    
+    /*for older IE browsers, the htc file fix will disable this feature when box-shadow was also applied.*/
+    filter:alpha(opacity=99);
+    opacity: 0.99;  
+            
+    /* Gradient background */
+    background: -moz-linear-gradient(top, #FFFFFF, #0066CC);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#0066CC)); 
+}
